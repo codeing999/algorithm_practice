@@ -1,4 +1,10 @@
-# algorithm_practic
+# algorithm_practice
+
+[프로그래머스](https://school.programmers.co.kr/)
+<br>
+[백준](https://www.acmicpc.net/)
+<br>
+[leetcode](https://leetcode.com/)
 
 | 날짜       | 한 일                                     |
 | :--------- | :---------------------------------------- |
