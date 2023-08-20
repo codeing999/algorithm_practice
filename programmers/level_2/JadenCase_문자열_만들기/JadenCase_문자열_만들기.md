@@ -5,11 +5,11 @@
 문제 자체는 간단했는데 한가지를 몰라서 검색 후 알게 되었다.
 처음에는
 ```js
-const converted = s[0].toUpperCase() + s.slice(1);
+const convertedWord = word[0].toUpperCase() + word.slice(1);
 ```
 이부분을
 ```js
-const s[0] = s[0].toUpperCase()
+const word[0] = word[0].toUpperCase()
 ```
 로 해서 첫번째 글자만 따로 변환하려고 했는데 변환이 안되었다.
 이게 왜 변환이 안되는 건지 찾아보니
