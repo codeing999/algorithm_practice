@@ -4,9 +4,11 @@
 <br>
 [백준](https://www.acmicpc.net/)
 <br>
-[leetcode](https://leetcode.com/)
+[LeetCode](https://leetcode.com/)
 <br>
-[goorm](https://level.goorm.io/)
+[GoormLevel](https://level.goorm.io/)
+<br>
+[CODEFORCES](https://codeforces.com/)
 
 | 날짜       | 한 일                                           |
 | :--------- | :---------------------------------------------- |
@@ -14,7 +16,7 @@
 | 2023-08-06 | programmers level2 큰 수 만들기 풀기 (실패)     |
 | 2023-08-20 | programmers level2 JadenCase 문자열 만들기 풀기 |
 | 2023-08-27 | goorm challenge GameJam 풀기                    |
-|            |                                                 |
+| 2023-08-28 | goorm challenge 통증2 풀기                      |
 |            |                                                 |
 |            |                                                 |
 |            |                                                 |
