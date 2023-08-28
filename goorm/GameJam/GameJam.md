@@ -1,6 +1,5 @@
 > https://level.goorm.io/exam/195692/gamejam/quiz/1
 
-
 # 풀이 과정
 
 일단 구름이란 사이트에서는 처음으로 문제를 풀어보는데,
@@ -35,7 +34,6 @@ let command = board[gCoord.y][gCoord.x].slice(-1);
 
 다만 GPT에게 물어보니
 다음과 같이 답변해주었다.
-
 
 첫 번째 코드는 board 배열의 [gCoord.y][gCoord.x] 위치에 있는 요소의 첫 번째 문자를 count 변수에 저장하고, 두 번째 문자를 command 변수에 저장하는 방식입니다.
 두 번째 코드는 board 배열의 [gCoord.y][gCoord.x] 위치에 있는 요소를 slice() 메서드를 이용하여 가장 마지막 문자를 제외한 나머지 문자열을 count 변수에 저장하고, 가장 마지막 문자를 command 변수에 저장하는 방식입니다.
