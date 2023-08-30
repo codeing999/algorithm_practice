@@ -30,7 +30,7 @@ rl.on('close', () => {
   for (let row = 0; row < N; row++) {
     for (let column = 0; column < N; column++) {
       if (isVisited[row][column] === false) {
-        const complex = bfs(town, isVisited, row, column);
+        const complex = dfs(town, isVisited, row, column);
         //단지면 해당 유형 단지수 1 증가
         if (complex[1] >= K) {
           types[complex[0]] += 1;
@@ -53,7 +53,7 @@ rl.on('close', () => {
   console.log(maxComplex[0]);
 });
 
-function bfs(town, isVisited, row, column) {
+function dfs(town, isVisited, row, column) {
   const stack = [[row, column]];
   const type = town[row][column];
   let count = 0;
