@@ -1,6 +1,6 @@
 # algorithm_practice
 
-[프로그래머스](https://school.programmers.co.kr/)
+[programmers](https://school.programmers.co.kr/)
 <br>
 [백준](https://www.acmicpc.net/)
 <br>
