@@ -18,6 +18,6 @@
 | 2023-08-27 | goorm challenge GameJam 풀기                                |
 | 2023-08-28 | goorm challenge 통증2 풀기                                  |
 | 2023-08-29 | goorm challenge 운동중독플레이어 풀기, 프로젝트 매니징 풀기 |
-|            |                                                             |
+| 2023-08-30 | goorm challenge 발전기 풀기                                 |
 |            |                                                             |
 |            |                                                             |
