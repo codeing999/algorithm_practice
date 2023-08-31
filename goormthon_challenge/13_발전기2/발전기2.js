@@ -63,14 +63,16 @@ function dfs(row, column) {
     for (let i = 0; i < 4; i++) {
       const nextRow = currentRow + dy[i];
       const nextColumn = currentColumn + dx[i];
-      if (nextRow >= 0 && nextRow < N && nextColumn >= 0 && nextColumn < N) {
-        if (
-          town[nextRow][nextColumn] === type &&
-          isVisited[nextRow][nextColumn] === false
-        ) {
-          stack.push([nextRow, nextColumn]);
-          isVisited[nextRow][nextColumn] = true;
-        }
+      if (
+        nextRow >= 0 &&
+        nextRow < N &&
+        nextColumn >= 0 &&
+        nextColumn < N &&
+        town[nextRow][nextColumn] === type &&
+        isVisited[nextRow][nextColumn] === false
+      ) {
+        stack.push([nextRow, nextColumn]);
+        isVisited[nextRow][nextColumn] = true;
       }
     }
   }
