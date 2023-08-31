@@ -31,21 +31,22 @@ rl.on('close', () => {
   for (let row = 0; row < N; row++) {
     for (let column = 0; column < N; column++) {
       if (isVisited[row][column] === false) {
+        isVisited[row][column] = true;
         const complex = dfs(row, column);
         //단지면 해당 유형 단지수 1 증가
-        if (complex[1] >= K) {
-          types[complex[0]] += 1;
+        if (complex.count >= K) {
+          types[complex.type] += 1;
 
           // 현재 더해진 유형의 단지수가 최대보다 크면 최대를 변경.
-          if (types[complex[0]] > maxComplex[1]) {
-            maxComplex[0] = complex[0];
-            maxComplex[1] = types[complex[0]];
+          if (types[complex.type] > maxComplex[1]) {
+            maxComplex[0] = complex.type;
+            maxComplex[1] = types[complex.type];
           } else if (
-            types[complex[0]] === maxComplex[1] &&
-            complex[0] > maxComplex[0]
+            types[complex.type] === maxComplex[1] &&
+            complex.type > maxComplex[0]
           ) {
-            // 현재 더해진 유형의 단지수가 최대와 같으나 유형번호가 더 높으면 최대를 변경.
-            maxComplex[0] = complex[0];
+            // 현재 더해진 유형의 단지수가 최대와 같으면서 유형번호가 더 높으면 최대를 변경.
+            maxComplex[0] = complex.type;
           }
         }
       }
@@ -62,7 +63,6 @@ function dfs(row, column) {
   while (stack.length > 0) {
     const [currentRow, currentColumn] = stack.pop();
     count++;
-    isVisited[currentRow][currentColumn] = true;
     for (let i = 0; i < 4; i++) {
       const nextRow = currentRow + dy[i];
       const nextColumn = currentColumn + dx[i];
@@ -72,9 +72,10 @@ function dfs(row, column) {
           isVisited[nextRow][nextColumn] === false
         ) {
           stack.push([nextRow, nextColumn]);
+          isVisited[nextRow][nextColumn] = true;
         }
       }
     }
   }
-  return [type, count];
+  return { type: type, count: count };
 }
