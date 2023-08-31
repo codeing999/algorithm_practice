@@ -20,8 +20,8 @@ rl.on('line', (line) => {
 });
 
 rl.on('close', () => {
-  let maxComplex = [0, 0]; //유형, 개수
   const types = new Array(31).fill(0); //1~30인덱스 사용. 해당 유형의 단지 수
+  let maxType = 0; //가장 단지수 많은 유형
   for (let i = 1; i < N + 1; i++) {
     town.push(input[i].split(' ').map(Number));
   }
@@ -37,23 +37,20 @@ rl.on('close', () => {
         if (complex.count >= K) {
           types[complex.type] += 1;
 
-          // 현재 더해진 유형의 단지수가 최대보다 크면 최대를 변경.
-          if (types[complex.type] > maxComplex[1]) {
-            maxComplex[0] = complex.type;
-            maxComplex[1] = types[complex.type];
-          } else if (
-            types[complex.type] === maxComplex[1] &&
-            complex.type > maxComplex[0]
+          // 현재 더해진 유형의 단지수가 최대보다 크거나
+          // 현재 더해진 유형의 단지수가 최대와 같으면서 유형번호가 더 높으면 최대를 변경.
+          if (
+            types[complex.type] > types[maxType] ||
+            (types[complex.type] === types[maxType] && complex.type > maxType)
           ) {
-            // 현재 더해진 유형의 단지수가 최대와 같으면서 유형번호가 더 높으면 최대를 변경.
-            maxComplex[0] = complex.type;
+            maxType = complex.type;
           }
         }
       }
     }
   }
 
-  console.log(maxComplex[0]);
+  console.log(maxType);
 });
 
 function dfs(row, column) {
