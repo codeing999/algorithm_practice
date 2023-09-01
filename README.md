@@ -17,7 +17,7 @@
 | 2023-08-20 | programmers level2 JadenCase 문자열 만들기 풀기 |
 | 2023-08-27 | goorm challenge GameJam 풀기                    | slice                                   |
 | 2023-08-28 | goorm challenge 통증2 풀기                      |
-| 2023-08-29 | goorm challenge 운동중독플레이어 풀기           | map(NUmber), system input, Math.trunc() |
+| 2023-08-29 | goorm challenge 운동중독플레이어 풀기           | map(Number), system input, Math.trunc() |
 | 2023-08-29 | goorm challenge 프로젝트 매니징 풀기            |
 | 2023-08-30 | goorm challenge 발전기 풀기                     | dxdy 기법, dfs, bfs                     |
 | 2023-08-31 | goorm challenge 발전기2 풀기                    | dfs, bfs                                |
