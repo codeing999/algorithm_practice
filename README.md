@@ -23,5 +23,5 @@
 | 2023-08-31 | goorm challenge 발전기2 풀기                    | dfs, bfs                                                         |
 | 2023-08-31 | goorm challenge 작은 노드 풀기                  | 그래프, 인접 행렬(Adjacency Matrix), 인접 리스트(Adjacency List) |
 | 2023-09-01 | goorm challenge 과일 구매 풀기                  |                                                                  |
-| 2023-09-05 | goorm challenge 연합 풀기                       | 인접 리스트(Adjacency List), 인접 행렬(Adjacency Matrix)         |
-|            |                                                 |                                                                  |
+| 2023-09-05 | goorm challenge 연합 풀기                       | 인접 리스트(Adjacency List), 인접 행렬(Adjacency Matrix), dfs    |
+| 2023-09-05 | goorm challenge 통신망 분석 풀기                | 인접 리스트(Adjacency List), dfs                                 |
