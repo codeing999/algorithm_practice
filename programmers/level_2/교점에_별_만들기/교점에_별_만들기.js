@@ -5,47 +5,33 @@ function solution(line) {
 
   for (let i = 0; i < line.length - 1; i++) {
     for (let j = i + 1; j < line.length; j++) {
-      //둘다 기울기가 0이 아니면
+      let firstA = line[i][0] * line[j][1];
+      let firstC = line[i][2] * line[j][1];
+      let secondA = line[j][0] * line[i][1];
+      let secondC = line[j][2] * line[i][1];
+      //교차점 x좌표 구하기
+      let x;
       if (line[i][1] !== 0 && line[j][1] !== 0) {
-        const first = -line[i][0] / line[i][1];
-        const second = -line[j][0] / line[j][1];
-        if (first !== second) {
-          let firstA = line[i][0] * line[j][1];
-          let firstC = line[i][2] * line[j][1];
-          let secondA = line[j][0] * line[i][1];
-          let secondC = line[j][2] * line[i][1];
-          let x = -(firstC - secondC) / (firstA - secondA);
-
-          if (x % 1 === 0) {
-            let y = -(x * line[i][0] + line[i][2]) / line[i][1];
-            if (y % 1 === 0) {
-              let point = zeroAbs([x, y]);
-              if (!checkDup(points, point)) {
-                points.push(point);
-              }
-            }
-          }
-        }
+        x = -(firstC - secondC) / (firstA - secondA);
       } else if (line[i][1] === 0) {
-        let x = -line[i][2] / line[i][0];
-        if (x % 1 === 0) {
-          let y = -(x * line[j][0] + line[j][2]) / line[j][1];
-          if (y % 1 === 0) {
-            let point = zeroAbs([x, y]);
-            if (!checkDup(points, point)) {
-              points.push(point);
-            }
-          }
-        }
+        x = -line[i][2] / line[i][0];
       } else if (line[j][1] === 0) {
-        let x = -line[j][2] / line[j][0];
-        if (x % 1 === 0) {
-          let y = -(x * line[i][0] + line[i][2]) / line[i][1];
-          if (y % 1 === 0) {
-            let point = zeroAbs([x, y]);
-            if (!checkDup(points, point)) {
-              points.push(point);
-            }
+        x = -line[j][2] / line[j][0];
+      }
+
+      if (x % 1 === 0) {
+        //구해진 x가 정수이면 y좌표 구하기
+        let y;
+        if (line[i][1] === 0) {
+          y = -(x * line[j][0] + line[j][2]) / line[j][1];
+        } else {
+          y = -(x * line[i][0] + line[i][2]) / line[i][1];
+        }
+
+        if (y % 1 === 0) {
+          let point = zeroAbs([x, y]);
+          if (!checkDup(points, point)) {
+            points.push(point);
           }
         }
       }
