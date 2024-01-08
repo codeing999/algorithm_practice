@@ -26,5 +26,5 @@
 | 2023-09-05 | goorm challenge 연합 풀기                       | 인접 리스트(Adjacency List), 인접 행렬(Adjacency Matrix), dfs    |
 | 2023-09-05 | goorm challenge 통신망 분석 풀기                | 인접 리스트(Adjacency List), dfs                                 |
 | 2024-01-06 | programmers level2 교점에 별 만들기             | 두 직선의 교점 구하기?                                           |
-| 2023-01-07 | programmers level2 피보나치 수                  | 숫자자료형의 범위                                                |
-| 2023-01-08 | programmers level2 후보키                       | 다른 접근법으로 다시 풀어봐야 함                                 |
+| 2024-01-07 | programmers level2 피보나치 수                  | 숫자자료형의 범위                                                |
+| 2024-01-08 | programmers level2 후보키                       | 다른 접근법으로 다시 풀어봐야 함                                 |
