@@ -12,8 +12,8 @@
 
 | 날짜       | 한 일                                           | 키워드                                                           |
 | :--------- | :---------------------------------------------- | ---------------------------------------------------------------- |
-| 2023-08-05 | programmers level2 요격 시스템 풀기(실패)       |
-| 2023-08-06 | programmers level2 큰 수 만들기 풀기(실패)      |
+| 2023-08-05 | programmers level2 요격 시스템 풀기(실패)       |        |
+| 2023-08-06 | programmers level2 큰 수 만들기 풀기(실패)      |          |
 | 2023-08-20 | programmers level2 JadenCase 문자열 만들기 풀기 | 객체불변성                                                       |
 | 2023-08-27 | goorm challenge GameJam 풀기                    | slice                                                            |
 | 2023-08-28 | goorm challenge 통증2 풀기                      |
@@ -28,4 +28,5 @@
 | 2024-01-06 | programmers level2 교점에 별 만들기             | 두 직선의 교점 구하기?                                           |
 | 2024-01-07 | programmers level2 피보나치 수                  | 숫자자료형의 범위                                                |
 | 2024-01-08 | programmers level2 후보키                       | 다른 접근법으로 다시 풀어봐야 함                                 |
-| 2024-01-09 | programmers level2 카펫                         |                                                                  |
+| 2024-01-09 | programmers level2 카펫                         | 수학적 접근법?                                            |
+| 2024-01-21 | programmers level2 구명보트                       | greedy, 효율성                                    |
