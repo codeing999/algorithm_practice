@@ -31,3 +31,4 @@
 | 2024-01-09 | programmers level2 카펫                         | 수학적 접근법?                                                   |
 | 2024-01-21 | programmers level2 구명보트                     | greedy, 스택을 pop 등 사용하지 않고 더 효율성있게 쓰는 법        |
 | 2024-01-23 | programmers level2 큰 수 만들기                 | greedy, 효율성 통과를 위한 예외처리                              |
+| 2024-01-23 | programmers level3 이중우선순위큐               | heap                                                             |
