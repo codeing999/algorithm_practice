@@ -12,7 +12,7 @@
 
 | 날짜       | 한 일                                           | 키워드                                                           |
 | :--------- | :---------------------------------------------- | ---------------------------------------------------------------- |
-| 2023-08-05 | programmers level2 요격 시스템 풀기(실패)       | greedy, 힌트 봄                                                                 |
+| 2023-08-05 | programmers level2 요격 시스템 풀기(실패)       | greedy, 힌트 봄                                                  |
 | 2023-08-06 | programmers level2 큰 수 만들기 풀기(실패)      | 나중에 풀이 성공                                                 |
 | 2023-08-20 | programmers level2 JadenCase 문자열 만들기 풀기 | 객체불변성                                                       |
 | 2023-08-27 | goorm challenge GameJam 풀기                    | slice                                                            |
@@ -32,4 +32,5 @@
 | 2024-01-21 | programmers level2 구명보트                     | greedy, 스택을 pop 등 사용하지 않고 더 효율성있게 쓰는 법        |
 | 2024-01-23 | programmers level2 큰 수 만들기                 | greedy, 효율성 통과를 위한 예외처리                              |
 | 2024-01-23 | programmers level3 이중우선순위큐               | heap                                                             |
-| 2024-02-3 | programmers level2 택배 배달과 수거하기               | greedy, 효율성                                                             |
+| 2024-02-03 | programmers level2 택배 배달과 수거하기         | greedy, 효율성                                                   |
+| 2024-02-07 | programmers level2 튜플                         | 문자열과 배열 다루기                                             |
